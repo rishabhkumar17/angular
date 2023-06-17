@@ -7,5 +7,9 @@ import { Todo } from 'src/app/Todo';
   styleUrls: ['./todo-item.component.css'],
 })
 export class TodoItemComponent {
-  @Input() todo: Todo | undefined;
+  @Input() todo!: Todo;
+
+  onClick() {
+    console.log('clicked');
+  }
 }
