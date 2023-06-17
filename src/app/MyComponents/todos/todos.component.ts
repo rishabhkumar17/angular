@@ -31,6 +31,10 @@ export class TodosComponent {
     ];
   }
 
+  addTodo(todo: Todo) {
+    this.todos.push(todo);
+  }
+
   deleteTodo(todo: Todo) {
     console.log(todo);
     const index = this.todos.indexOf(todo);
